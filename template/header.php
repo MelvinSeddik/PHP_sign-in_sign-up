@@ -28,7 +28,7 @@ if(!isset($_SESSION))
     <header class="flex acenter">
         <a href="index.php" class="flex acenter">
             <figure>
-                <img src="img\site-logo-white.svg" alt="logo">
+                <img src="img/site-logo-white.svg" alt="logo">
             </figure>
         </a>
         

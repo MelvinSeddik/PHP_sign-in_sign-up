@@ -40,11 +40,17 @@ body {
   color: white;
   border-radius: 5px;
   margin: 0 10px;
-  border: 2px solid #f46036;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn:hover {
+  background: #c4421e;
 }
 
 figure {
   margin: 0;
+  display: block;
 }
 
 img {
@@ -61,7 +67,7 @@ a {
 .search {
   outline: none;
   padding: 15px 10px;
-  width: 380px;
+  width: 85%;
 }
 
 .search::-webkit-input-placeholder {
@@ -93,6 +99,7 @@ header {
   color: black;
   height: 120px;
   padding: 0 10%;
+  position: relative;
 }
 
 header figure {
@@ -124,9 +131,29 @@ header span .fas {
           transform: translate(-50%, -50%);
 }
 
+header > div {
+  width: 30%;
+}
+
 .sign-up {
-  background: white;
-  color: #f46036;
+  background: #131313;
+  color: white;
+  border: 2px solid #f46036;
+}
+
+.sign-up:hover {
+  background: #3d3d3d;
+}
+
+.banner {
+  cursor: pointer;
+}
+
+.banner img {
+  height: auto;
+  vertical-align: middle;
+  margin: 0 auto 0 auto;
+  width: 110%;
 }
 
 section#cat {
@@ -134,18 +161,29 @@ section#cat {
       justify-content: space-around;
   padding: 12%;
   height: 600px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-section#cat div {
-  width: 24.9%;
+section#cat figure {
+  width: 24%;
   position: relative;
   height: 180px;
   background: white;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 3px black;
+          box-shadow: 0 0 3px black;
 }
 
-section#cat div img {
+section#cat figure:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 2;
+}
+
+section#cat figure img {
   position: absolute;
-  top: -120px;
+  top: -130px;
   width: 250px;
   height: 250px;
   left: 50%;
@@ -153,14 +191,51 @@ section#cat div img {
           transform: translateX(-50%);
 }
 
-section#cat div label {
+section#cat figure label {
   position: absolute;
-  bottom: 0;
+  top: 90px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  text-align: center;
   font-weight: bold;
   font-size: 20px;
   margin: 1em 0;
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0;
+  }
+  section#cat {
+    padding: 6%;
+  }
+  section#cat figure {
+    margin-top: 150px;
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  header figure {
+    overflow: hidden;
+    position: relative;
+    width: 50px;
+    height: 80px;
+  }
+  header figure img {
+    position: absolute;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    height: 80px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  section#cat figure {
+    margin-top: 150px;
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

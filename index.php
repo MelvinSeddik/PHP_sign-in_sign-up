@@ -30,8 +30,8 @@ require_once("template/header.php");
 </section>
 
 <section id="cat" class="flex acenter jcenter">
-    <div><img src="img/home-featured-cat-pc.png" alt=""><label>PC et ordinateur</label></div>
-    <div><img src="img/home-featured-cat-composants.png" alt=""><label>Composant PC</label></div>
-    <div><img src="img/peripheriques_0.png" alt=""><label>Périphérique PC</label></div>
-    <div><img src="img/home-featured-cat-tel.png" alt=""><label>Image et son</label></div>
+    <figure class="flex column"><img src="img/home-featured-cat-pc.png" alt=""><label>PC et ordinateur</label></figure>
+    <figure><img src="img/home-featured-cat-composants.png" alt=""><label>Composant PC</label></figure>
+    <figure><img src="img/peripheriques_0.png" alt=""><label>Périphérique PC</label></figure>
+    <figure><img src="img/home-featured-cat-tel.png" alt=""><label>Image et son</label></figure>
 </section>
