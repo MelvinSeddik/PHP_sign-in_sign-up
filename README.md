@@ -1,6 +1,7 @@
 # PHP_sign-in_sign-up
  
-Système de connexion et déconnexion PHP (avec un choix thématique d'un site que j'aime bien)
+
+Simple page pour illustrer un système de connexion et de déconnexion en PHP (avec un choix thématique d'un site que j'aime bien)
 
 -Protection contre les failles XSS, CSRF, Injection SQL
 
